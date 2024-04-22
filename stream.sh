@@ -3,8 +3,8 @@
 DISPLAY=:1
 
 # Change INRES and OUTRES values to match your config from above
-INRES="1280x720"
-OUTRES="1280x720"
+INRES="${SCREEN_W}x${SCREEN_H}"
+OUTRES="${SCREEN_W}x${SCREEN_H}"
 
 # Target FPS
 FPS="15"

@@ -6,5 +6,7 @@ services:
     tmpfs: /tmp
     tty: true
     environment:
-      - SITE_URL=
+      - SITE_URL=https://google.com
       - STREAM_KEY=
+      - SCREEN_W=1920
+      - SCREEN_H=1080
