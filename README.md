@@ -1,10 +1,8 @@
 <div align="center">
-  
-# asciiquarium-stream
 
-<a href="https://www.twitch.tv/asciiquarium" target="_blank"><img width="220px" src="https://img.shields.io/twitch/status/asciiquarium?style=for-the-badge&logo=twitch&logoColor=EEEEEE&color=9146FF"></img></a>
+# twitch-site-stream
 
-*A headless setup for streaming asciiquarium to Twitch. Without a monitor.*
+*A headless setup for streaming any website to Twitch. Without a monitor.*
 
 </div>
 
@@ -12,8 +10,9 @@
 
 1. Clone this repo
 2. Add your Twitch [stream key](https://www.twitch.tv/broadcast/dashboard/streamkey) to `compose.yaml`
-3. Optionally, you may [set a server](https://github.com/tycrek/asciiquarium-stream/blob/master/stream.sh#L32) to use
-4. Run `docker compose up`
+3. Add your target URL to `compose.yaml`
+4. Optionally, you may [set a server](https://github.com/tycrek/asciiquarium-stream/blob/master/stream.sh#L32) to use
+5. Run `docker compose up`
 
 ## How does this work?
 
@@ -22,9 +21,9 @@ It's a bit complicated to explain so I'll break down the main components:
 - a **fake monitor** is created by [xvfb](https://www.x.org/releases/X11R7.6/doc/man/man1/Xvfb.1.xhtml)
 - a **terminal** is emulated with [xterm](https://invisible-island.net/xterm/)
 - a **live stream** is handled by [ffmpeg](https://ffmpeg.org/)
-- finally, [**asciiquarium**](https://robobunny.com/projects/asciiquarium/html/) is the star of the show
+- finally, **Chrome** is used to show the webpage
 
-If you're interested in the original (but outdated) Reddit post, [visit the wiki](https://github.com/tycrek/asciiquarium-stream/wiki/Old-Reddit-Post).
+This project is heavily influenced by the [asciiquarium-stream](https://github.com/tycrek/asciiquarium-stream). Credit goes there for the heavy lifting/research.
 
 ### Helpful resources
 
