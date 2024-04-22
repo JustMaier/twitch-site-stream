@@ -1,0 +1,10 @@
+services:
+  site-stream:
+    build: .
+    container_name: site-stream
+    restart: unless-stopped
+    tmpfs: /tmp
+    tty: true
+    environment:
+      - SITE_URL=
+      - STREAM_KEY=
